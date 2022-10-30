@@ -4,7 +4,7 @@ import subprocess
 from django.template import loader
 # Create your views here.
 def index(request):
-    shell = subprocess.run(['/home/bokang-sepinare/Music/status/app/script.sh'],
+    shell = subprocess.run(['./script.sh'],
 				 stdout = subprocess.PIPE)
     output_str = shell.stdout.decode()
 	#output into list
